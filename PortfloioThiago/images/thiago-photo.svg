@@ -1,0 +1,7 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Placeholder para foto de Thiago - Reemplazar con imagen real -->
+  <rect width="400" height="500" fill="#E5E5E5"/>
+  <text x="200" y="250" text-anchor="middle" fill="#999" font-size="24" font-family="Arial, sans-serif">Foto de Thiago</text>
+  <text x="200" y="280" text-anchor="middle" fill="#999" font-size="16" font-family="Arial, sans-serif">(Reemplazar con imagen real)</text>
+</svg>
+

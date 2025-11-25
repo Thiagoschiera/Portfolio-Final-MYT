@@ -22,7 +22,7 @@ const Portfolio_Thiago = () => {
           {/* Columna Izquierda - Foto */}
           <div className="w-[400px] h-[500px] bg-gray-200 flex items-center justify-center overflow-hidden rounded-lg">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" 
+              src="./images/thiago-photo.svg" 
               alt="Thiago Schiera" 
               className="w-full h-full object-cover"
             />
@@ -93,37 +93,11 @@ const Portfolio_Thiago = () => {
           {/* Proyecto 1 - DiHy Care */}
           <div className="w-[400px] flex flex-col gap-4">
             <div className="w-full h-[300px] bg-black rounded flex items-center justify-center p-8">
-              <div className="flex items-center gap-4">
-                {/* Logo DiHy Care - Corazón con ECG */}
-                <div className="relative">
-                  <svg width="120" height="120" viewBox="0 0 120 120">
-                    {/* Corazón con gradiente azul */}
-                    <defs>
-                      <linearGradient id="heartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stopColor="#5B9BD5" />
-                        <stop offset="100%" stopColor="#2E5C8A" />
-                      </linearGradient>
-                    </defs>
-                    <path 
-                      d="M60,30 C50,20 30,20 30,40 C30,50 40,60 60,80 C80,60 90,50 90,40 C90,20 70,20 60,30 Z" 
-                      fill="url(#heartGradient)"
-                    />
-                    {/* Línea de ECG dentro del corazón */}
-                    <path 
-                      d="M25,60 L35,50 L40,55 L45,45 L50,50 L55,40 L60,50 L65,40 L70,50 L75,45 L80,50 L85,45 L95,60" 
-                      stroke="black" 
-                      strokeWidth="3" 
-                      fill="none" 
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </div>
-                {/* Texto DiHy Care */}
-                <div className="flex flex-col">
-                  <span className="text-[#2E5C8A] text-2xl font-bold">DiHy</span>
-                  <span className="text-[#2E5C8A] text-2xl font-bold">Care</span>
-                </div>
-              </div>
+              <img 
+                src="./images/dihy-care-logo.svg" 
+                alt="DiHy Care Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <h3 className="text-xl font-bold text-black">Proyecto #1</h3>
             <p className="text-sm text-black leading-relaxed">
@@ -133,48 +107,16 @@ const Portfolio_Thiago = () => {
 
           {/* Proyecto 2 - Study Buddy */}
           <div className="w-[400px] flex flex-col gap-4">
-            <div className="w-full h-[300px] rounded flex items-center justify-center p-8 relative overflow-hidden" style={{
-              background: 'linear-gradient(to right, #4A90E2, #87CEEB)'
-            }}>
-              <div className="flex items-center gap-6">
-                {/* Pingüino con libro */}
-                <svg width="140" height="140" viewBox="0 0 140 140">
-                  {/* Cuerpo del pingüino */}
-                  <ellipse cx="70" cy="90" rx="35" ry="40" fill="black" />
-                  <ellipse cx="70" cy="85" rx="30" ry="35" fill="white" />
-                  
-                  {/* Cabeza */}
-                  <circle cx="70" cy="40" r="25" fill="black" />
-                  <ellipse cx="70" cy="45" rx="20" ry="22" fill="white" />
-                  
-                  {/* Pico */}
-                  <ellipse cx="70" cy="50" rx="8" ry="6" fill="#FF8C42" />
-                  
-                  {/* Anteojos */}
-                  <circle cx="62" cy="42" r="6" fill="none" stroke="#4A90E2" strokeWidth="2" />
-                  <circle cx="78" cy="42" r="6" fill="none" stroke="#4A90E2" strokeWidth="2" />
-                  <line x1="68" y1="42" x2="72" y2="42" stroke="#4A90E2" strokeWidth="2" />
-                  
-                  {/* Patas */}
-                  <ellipse cx="60" cy="125" rx="8" ry="6" fill="#FF8C42" />
-                  <ellipse cx="80" cy="125" rx="8" ry="6" fill="#FF8C42" />
-                  
-                  {/* Libro */}
-                  <rect x="45" y="70" width="30" height="25" rx="2" fill="#4A90E2" />
-                  <rect x="47" y="72" width="26" height="21" fill="white" />
-                  <line x1="60" y1="75" x2="60" y2="90" stroke="#4A90E2" strokeWidth="1" />
-                </svg>
-                
-                {/* Texto STUDY BUDDY */}
-                <div className="flex flex-col">
-                  <span className="text-white text-3xl font-bold">STUDY</span>
-                  <span className="text-white text-3xl font-bold">BUDDY</span>
-                </div>
-              </div>
+            <div className="w-full h-[300px] rounded flex items-center justify-center p-8 relative overflow-hidden">
+              <img 
+                src="./images/study-buddy-logo.svg" 
+                alt="Study Buddy Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <h3 className="text-xl font-bold text-black">Proyecto #2</h3>
             <p className="text-sm text-black leading-relaxed">
-            Study Buddy es una aplicación web que permite a los estudiantes encontrar compañeros de estudio para estudiar de manera mas eficiente.
+            Study Buddy es una aplicación que permite a los estudiantes encontrar metodos de estudio para estudiar de manera mas eficiente.
 
             </p>
           </div>
@@ -203,120 +145,49 @@ const Portfolio_Thiago = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-4 gap-8">
           {/* npm */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 bg-[#CB3837] rounded flex items-center justify-center">
-              <span className="text-white font-bold text-lg">npm</span>
-            </div>
+            <img src="./images/npm-logo.svg" alt="npm" className="w-20 h-20" />
             <span className="text-sm text-black">npm</span>
           </div>
 
           {/* C# */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 rounded-lg flex items-center justify-center relative overflow-hidden" style={{ backgroundColor: '#68217A' }}>
-              <svg width="50" height="50" viewBox="0 0 50 50">
-                {/* Hexágono */}
-                <path d="M25,5 L40,12 L40,38 L25,45 L10,38 L10,12 Z" fill="#68217A"/>
-                {/* C */}
-                <text x="20" y="32" fill="white" fontSize="22" fontWeight="bold" fontFamily="Arial">C</text>
-                {/* # con fondo más claro */}
-                <rect x="28" y="15" width="12" height="20" fill="#8B4FA8" rx="1"/>
-                <text x="34" y="32" fill="white" fontSize="16" fontWeight="bold" fontFamily="Arial">#</text>
-              </svg>
-            </div>
+            <img src="./images/csharp-logo.svg" alt="C#" className="w-20 h-20" />
             <span className="text-sm text-black">C#</span>
           </div>
 
           {/* Python */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 bg-white rounded flex items-center justify-center border border-gray-200">
-              <svg width="50" height="50" viewBox="0 0 50 50">
-                {/* Serpiente azul (arriba) */}
-                <ellipse cx="18" cy="18" rx="8" ry="6" fill="#3776AB"/>
-                <ellipse cx="18" cy="18" rx="6" ry="4" fill="#4A9BD4"/>
-                <circle cx="16" cy="17" r="1.5" fill="white"/>
-                {/* Cuerpo serpiente azul */}
-                <path d="M18,22 Q15,28 20,32 Q25,35 25,30" fill="#3776AB"/>
-                {/* Serpiente amarilla (abajo) */}
-                <ellipse cx="32" cy="32" rx="8" ry="6" fill="#FFD43B"/>
-                <ellipse cx="32" cy="32" rx="6" ry="4" fill="#FFE873"/>
-                <circle cx="34" cy="31" r="1.5" fill="white"/>
-                {/* Cuerpo serpiente amarilla */}
-                <path d="M32,28 Q35,22 30,18 Q25,15 25,20" fill="#FFD43B"/>
-              </svg>
-            </div>
+            <img src="./images/python-logo.svg" alt="Python" className="w-20 h-20" />
             <span className="text-sm text-black">Python</span>
           </div>
 
           {/* Linux */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 bg-white rounded flex items-center justify-center">
-              <svg width="50" height="50" viewBox="0 0 50 50">
-                {/* Tux el pingüino */}
-                <ellipse cx="25" cy="30" rx="12" ry="15" fill="black"/>
-                <ellipse cx="25" cy="28" rx="10" ry="12" fill="white"/>
-                <circle cx="25" cy="20" r="8" fill="black"/>
-                <ellipse cx="25" cy="22" rx="6" ry="7" fill="white"/>
-                <ellipse cx="25" cy="25" rx="3" ry="2" fill="#FFD700"/>
-                <ellipse cx="22" cy="20" r="1.5" fill="white"/>
-                <ellipse cx="28" cy="20" r="1.5" fill="white"/>
-                <ellipse cx="20" cy="35" rx="3" ry="2" fill="#FFD700"/>
-                <ellipse cx="30" cy="35" rx="3" ry="2" fill="#FFD700"/>
-              </svg>
-            </div>
+            <img src="./images/linux-logo.svg" alt="Linux" className="w-20 h-20" />
             <span className="text-sm text-black">Linux</span>
           </div>
 
           {/* GitHub */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 bg-black rounded-full flex items-center justify-center">
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="white">
-                {/* Cabeza del Octocat */}
-                <circle cx="25" cy="20" r="9" fill="white"/>
-                {/* Ojos */}
-                <ellipse cx="21" cy="18" rx="2.5" ry="3" fill="black"/>
-                <ellipse cx="29" cy="18" rx="2.5" ry="3" fill="black"/>
-                {/* Sonrisa */}
-                <path d="M21,23 Q25,26 29,23" stroke="black" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                {/* Tentáculo izquierdo */}
-                <path d="M15,25 Q12,28 15,32 Q18,35 20,32" fill="white"/>
-                <path d="M15,25 Q12,28 15,32 Q18,35 20,32" stroke="black" strokeWidth="0.5" fill="none"/>
-              </svg>
-            </div>
+            <img src="./images/github-logo.svg" alt="GitHub" className="w-20 h-20" />
             <span className="text-sm text-black">GitHub</span>
           </div>
 
           {/* HTML5 */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 bg-white rounded flex items-center justify-center">
-              <svg width="50" height="50" viewBox="0 0 50 50">
-                <path d="M25,5 L40,8 L38,35 L25,40 L12,35 L10,8 Z" fill="#E34F26"/>
-                <text x="25" y="30" textAnchor="middle" fill="white" fontSize="18" fontWeight="bold">5</text>
-              </svg>
-            </div>
+            <img src="./images/html5-logo.svg" alt="HTML5" className="w-20 h-20" />
             <span className="text-sm text-black">HTML5</span>
           </div>
 
           {/* CSS3 */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 bg-white rounded flex items-center justify-center">
-              <svg width="50" height="50" viewBox="0 0 50 50">
-                <path d="M25,5 L40,8 L38,35 L25,40 L12,35 L10,8 Z" fill="#1572B6"/>
-                <text x="25" y="30" textAnchor="middle" fill="white" fontSize="18" fontWeight="bold">3</text>
-              </svg>
-            </div>
+            <img src="./images/css3-logo.svg" alt="CSS3" className="w-20 h-20" />
             <span className="text-sm text-black">CSS3</span>
           </div>
 
           {/* React Native */}
           <div className="flex flex-col items-center gap-2">
-            <div className="w-20 h-20 bg-white rounded flex items-center justify-center">
-              <svg width="50" height="50" viewBox="0 0 50 50">
-                {/* Átomo de React */}
-                <circle cx="25" cy="25" r="4" fill="#61DAFB"/>
-                <ellipse cx="25" cy="25" rx="20" ry="6" fill="none" stroke="#61DAFB" strokeWidth="2" opacity="0.8"/>
-                <ellipse cx="25" cy="25" rx="20" ry="6" fill="none" stroke="#61DAFB" strokeWidth="2" opacity="0.8" transform="rotate(60 25 25)"/>
-                <ellipse cx="25" cy="25" rx="20" ry="6" fill="none" stroke="#61DAFB" strokeWidth="2" opacity="0.8" transform="rotate(-60 25 25)"/>
-              </svg>
-            </div>
+            <img src="./images/react-native-logo.svg" alt="React Native" className="w-20 h-20" />
             <span className="text-sm text-black">React Native</span>
           </div>
         </div>

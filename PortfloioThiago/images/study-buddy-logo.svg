@@ -1,0 +1,41 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A90E2" />
+      <stop offset="100%" stop-color="#87CEEB" />
+    </linearGradient>
+  </defs>
+  <!-- Fondo con gradiente -->
+  <rect width="200" height="200" fill="url(#bgGradient)" />
+  
+  <!-- Pingüino -->
+  <!-- Cuerpo del pingüino -->
+  <ellipse cx="100" cy="140" rx="50" ry="60" fill="black" />
+  <ellipse cx="100" cy="130" rx="45" ry="55" fill="white" />
+  
+  <!-- Cabeza -->
+  <circle cx="100" cy="60" r="40" fill="black" />
+  <ellipse cx="100" cy="75" rx="35" ry="40" fill="white" />
+  
+  <!-- Pico -->
+  <ellipse cx="100" cy="85" rx="15" ry="12" fill="#FF8C42" />
+  
+  <!-- Anteojos -->
+  <circle cx="85" cy="70" r="12" fill="none" stroke="#4A90E2" stroke-width="3" />
+  <circle cx="115" cy="70" r="12" fill="none" stroke="#4A90E2" stroke-width="3" />
+  <line x1="97" y1="70" x2="103" y2="70" stroke="#4A90E2" stroke-width="3" />
+  
+  <!-- Patas -->
+  <ellipse cx="80" cy="195" rx="15" ry="12" fill="#FF8C42" />
+  <ellipse cx="120" cy="195" rx="15" ry="12" fill="#FF8C42" />
+  
+  <!-- Libro -->
+  <rect x="50" y="120" width="50" height="40" rx="3" fill="#2E5C8A" />
+  <rect x="53" y="123" width="44" height="34" fill="white" />
+  <line x1="75" y1="130" x2="75" y2="155" stroke="#2E5C8A" stroke-width="2" />
+  
+  <!-- Texto STUDY BUDDY -->
+  <text x="100" y="30" text-anchor="middle" fill="white" font-size="28" font-weight="bold" font-family="Arial, sans-serif">STUDY</text>
+  <text x="100" y="50" text-anchor="middle" fill="white" font-size="28" font-weight="bold" font-family="Arial, sans-serif">BUDDY</text>
+</svg>
+
